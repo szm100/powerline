@@ -1,0 +1,3 @@
+Overview
+
+Given the sporadic nature of CPU utilization, and how current carbon calculations depend heavily on this metric, I propose Powerline, a plugin that uses polynomial regression and other techniques to "even out" CPU utilization statistics. CPU utilization measurements vary by large amounts over short periods of time, and since only snapshots of the data are used for the final calculations, anomalies (more often than not spikes) could result in a false estimation of true utilization. Through smoothing out CPU utilization numbers in a way that more accurately reflects the actual usage without needing to conduct measurements more frequently, I hope that Powerline will allow for more accurate environmental impact reporting.
